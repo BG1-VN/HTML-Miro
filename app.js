@@ -1,9 +1,8 @@
 miro.onReady(() => {
-    // Add an event listener to the button
+    // When the button is clicked, open the Streamlit app in a modal
     document.getElementById("open-streamlit").addEventListener("click", () => {
-        // Open the Streamlit app inside a modal in Miro
         miro.board.ui.openModal({
-            url: "https://mirotommd.streamlit.app/",  // Replace with your Streamlit URL
+            url: "https://mirotommd.streamlit.app/",  // Replace with your Streamlit app URL
             width: 800,  // Adjust modal width
             height: 600, // Adjust modal height
         });
